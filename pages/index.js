@@ -10,8 +10,8 @@ import Hero from "../components/Hero";
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Manu Arora - Developer, Writer, Creator"
-      description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
+      title="Daria Smirnova - Developer, Designer, Creator"
+      description="This is a developer portfolio that gets me a job."
     >
       <Hero />
       {/* <FavouriteProjects /> */}

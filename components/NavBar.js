@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
+import userData from "@constants/userData";
 
 export default function NavBar() {
   const router = useRouter();
@@ -16,6 +17,19 @@ export default function NavBar() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
       <div className="flex md:flex-row justify-between items-center">
+      <div className="flex flex-col">
+          <Link href="/">
+            <a>
+              <h1 className="font-semibold text-xl dark:text-gray-100">
+                {userData.name}
+              </h1>
+              <p className="text-base font-light text-gray-500 dark:text-gray-300">
+                
+                {userData.designation}
+              </p>
+            </a>
+          </Link>
+        </div>
         <button
           aria-label="Toggle Dark Mode"
           type="button"
