@@ -8,25 +8,33 @@ import FavouriteProjects from "../components/FavouriteProjects";
 //import getLatestRepos from "@lib/getLatestRepos";
 //import userData from "@constants/data";
 import { React, useState } from "react";
-import { withTranslation, i18n } from "../i18n"
+// import { withTranslation, i18n } from "../i18n"
+import { useTranslation } from "next-i18next";
 
 export default function Home({ repositories }) {
+  const { t } = useTranslation("hello");
+  console.log(t("hello"));
 
-  const handleClick = (e) =>{
-    language=="en"? setLanguage("zh") : setLanguage("en")
-    i18n.changeLanguage(language)
-  }
+  const handleClick = (e) => {
+    language == "en" ? setLanguage("zh") : setLanguage("en");
+    // i18n.changeLanguage(language)
+  };
 
-  const [language, setLanguage] = useState("en")
+  const [language, setLanguage] = useState("en");
 
   return (
     <ContainerBlock
       title="Daria Smirnova - Developer, Designer, Creator"
       description="This is a developer portfolio that gets me a job."
     >
-      <button aria-controls="simple-menu" aria-haspopup="true"  color="primary" onClick={handleClick} >
-           {i18n.language=="en"? "English" : "中文"}
-        </button>
+      <button
+        aria-controls="simple-menu"
+        aria-haspopup="true"
+        color="primary"
+        onClick={handleClick}
+      >
+        {/* {i18n.language == "en" ? "English" : "中文"} */}
+      </button>
       <Hero />
       <FavouriteProjects />
     </ContainerBlock>
