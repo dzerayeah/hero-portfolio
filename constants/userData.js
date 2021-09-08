@@ -2,7 +2,7 @@ const userData = {
   githubUserName: "Darydis",
   name: "Daria Smirnova",
   designation: "Frontend Developer, Designer",
-  avatarUrl: "/avatar.png",
+  avatarUrl: "../avatar.png",
   email: "smirnova.d.d@gmail.com",
   phone: "+790378012448",
   projects: [
@@ -51,7 +51,7 @@ const userData = {
     "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
   socialLinks: {
     instagram: "https://instagram.com/smirnovayeah",
-    twitter: "https://twitter.com/mannupaaji",
+    telegram: "https://t.me/darydis",
     linkedin: "https://linkedin.com/in/manuarora28",
     github: "https://github.com/manuarora700",
     facebook: "https://facebook.com/",
